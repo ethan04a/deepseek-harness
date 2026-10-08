@@ -46,3 +46,63 @@ worktrees/
 .agents/worktrees/
 .typert-*/
 native/system/test/bin/
+
+# ---------------------------------------------------------------------------
+# Generated artifacts: build output, caches, test reports (never commit)
+# ---------------------------------------------------------------------------
+build/
+out/
+dist/
+.turbo/
+.vite/
+.vitest/
+.rollup.cache/
+.eslintcache
+.oxlintcache
+.stylelintcache
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+
+# ---------------------------------------------------------------------------
+# Local config & secrets (never commit)
+# ---------------------------------------------------------------------------
+/.dsh/
+.env.*
+!.env.example
+!**/.env.*.example
+.envrc
+.direnv/
+*.pem
+*.key
+*.pfx
+*.p12
+.credentials.yaml
+credentials.local.*
+secrets.json
+*.secrets.json
+.mcp.json
+*.local.md
+*.local.json
+*.local.yml
+*.local.yaml
+.claude/settings.local.json
+AGENTS.local.md
+
+# editor / OS noise
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.history/
